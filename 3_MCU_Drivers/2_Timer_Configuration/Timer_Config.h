@@ -1,5 +1,5 @@
 /*****************************************************************
- *  @brief MCU watchdog for stm32f103c8tc
+ *  @brief MCU timer for stm32f103c8tc
  *         This configuration is generate by CubeMX
  *		   Source file provide configuration function to uppper layer
  *  @author Bui Duong
@@ -7,10 +7,10 @@
  *
  *
  * ****************************************************************/
-#ifndef _MCU_WDGCONFIG_H
-#define _MCU_WDGCONFIG_H
+#ifndef _MCU_TIMERCONGIG_H
+#define _MCU_TIMERCONGIG_H
 
-
-extern void MX_IWDG_Init(void);
+extern TIM_HandleTypeDef htim2;
+extern void MX_TIM2_Init(void);
 
 #endif
